@@ -143,7 +143,7 @@ public class Main {
         System.out.print("    "+NovSubs);
         System.out.print("    "+DecSubs);
             
-          
+          System.out.println("bih");
 
             
          
