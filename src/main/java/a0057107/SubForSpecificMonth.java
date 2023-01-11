@@ -37,13 +37,16 @@ public class SubForSpecificMonth {
         int NovSubs = 0; // counter
         int DecSubs = 0; // counter
         int MonthlyCost = 0;
+        int JanMonthlyCost = 0;
+        float Bronze =0 ;
+        float Silver = 0;
+        float Gold = 0;
         
         File current = new File("current.txt");
         Scanner ScanFile = new Scanner(current);
         
-        
         while (ScanFile.hasNextLine()) {
-            String line = ScanFile.nextLine();
+            String line = ScanFile.next();
             String month = line.substring(3, 6);
             String Package = ScanFile.next();
             ScanFile.next();
@@ -51,169 +54,99 @@ public class SubForSpecificMonth {
             String Monthly = ScanFile.next();
             //Int Cost = ScanFile.nextInt();
             
-            if (Month == 1){
-                if (month.equals("Jan")){
+            
+            if (month.equals("Jan")){
                     JanSubs++;}
-                if (Monthly.equals("M")){
-                    MSubCounter++;}
-                MonthlyCost = MonthlyCost + ScanFile.nextInt();
-                float truetotal = MonthlyCost/MSubCounter;
-            System.out.println("Total number of subscriptions for January: "+JanSubs);
-            System.out.println("Average subscription fee: "+ truetotal);
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-          
-        }
-        else if (Month == 2){
-            if (month.equals("Feb")){
+            
+            else if (month.equals("Feb")){
                     FebSubs++;}
-            
-            System.out.println("Total number of subscriptions for February: "+FebSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 3){
-            if (month.equals("Mar")){
+                
+                else  if (month.equals("Mar")){
                     MarSubs++;}
-            System.out.println("Total number of subscriptions for March: " +MarSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 4){
-            if (month.equals("Apr")){
+                
+                else  if (month.equals("Apr")){
                     AprSubs++;}
-            System.out.println("Total number of subscriptions for April: "+AprSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 5){
-            if (month.equals("May")){
-                    MaySubs++;}
-            System.out.println("Total number of subscriptions for May: "+MaySubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 6){
-            if (month.equals("Jun")){
+                
+                else if (month.equals("May")){
+                    MaySubs++;} 
+                
+                else  if (month.equals("Jun")){
                     JunSubs++;}
-            System.out.println("Total number of subscriptions for June: "+JunSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-           
-        }
-        else if (Month == 7){
-            if (month.equals("Jul")){
+                
+                else   if (month.equals("Jul")){
                     JulSubs++;}
-            System.out.println("Total number of subscriptions for July: "+JulSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 8){
-            if (month.equals("Aug")){
+                
+                else   if (month.equals("Aug")){
                     AugSubs++;}
-            System.out.println("Total number of subscriptions for August: "+AugSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 9){
-            if (month.equals("Sep")){
+                
+                else   if (month.equals("Sep")){
                     SepSubs++;}
-            System.out.println("Total number of subscriptions for September: "+SepSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 10){
-            if (month.equals("Oct")){
-                    OctSubs++;}
-            System.out.println("Total number of subscriptions for October: "+OctSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 11){
-            if (month.equals("Nov")){
+                
+                else   if (month.equals("Oct")){
+                    OctSubs++;} 
+                
+                else if (month.equals("Nov")){
                     NovSubs++;}
-            System.out.println("Total number of subscriptions for November: "+NovSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
-            
-        }
-        else if (Month == 12){
-            if (month.equals("Dec")){
+                
+                else  if (month.equals("Dec")){
                     DecSubs++;}
-            System.out.println("Total number of subscriptions for December: "+DecSubs);
-            System.out.println("Average subscription fee: ");
-            System.out.println("");
-            System.out.println("Percentage of subscriptions: ");
-            System.out.println("Bronze: ");
-            System.out.println("Silver:");
-            System.out.println("Silver: ");
-            System.out.println("");
             
+            if (Monthly.equals("M")){
+                MSubCounter++;
+                JanMonthlyCost = MonthlyCost + ScanFile.nextInt();}
+            
+            if (Package.equals("B")){
+                Bronze++;
+            }
+            else if (Package.equals("S")){
+                Silver++;
+            }
+            else if (Package.equals("G")){
+                Gold++;
+            }
+                   ScanFile.nextLine();  
+                    
         }
-        ScanFile.nextLine();
+        
+                   
+        if (Month == 1) {
+            float truetotal = JanMonthlyCost/MSubCounter;
+            
+            System.out.println("Total number of subscriptions for January: "+JanSubs);
+            System.out.printf("Average subscription fee: " +  "£%.2f "   , (truetotal)/100);
+            System.out.println("\n");
+            System.out.println("Percentage of subscriptions: ");
+            System.out.println("Bronze: "+ (Bronze/JanSubs)*100);
+            System.out.println("Silver: "+ (Silver/JanSubs)*100);
+            System.out.println("Silver: "+ (Gold/JanSubs)*100);
+            System.out.println("");
         }
-       
+            
+        else if (Month ==2){
+            System.out.println("Total number of subscriptions for January: "+FebSubs);
+            System.out.printf("Average subscription fee: ");
+            System.out.println("\n");
+            System.out.println("Percentage of subscriptions: ");
+            System.out.println("Bronze: "+ (Bronze/FebSubs)*100);
+            System.out.println("Silver: "+ (Silver/FebSubs)*100);
+            System.out.println("Silver: "+ (Gold/FebSubs)*100);
+            System.out.println("");
+        }
+        else if (Month ==3){
+            System.out.println("Total number of subscriptions for January: "+MarSubs);
+            System.out.printf("Average subscription fee: " );
+            System.out.println("\n");
+            System.out.println("Percentage of subscriptions: ");
+            System.out.println("Bronze: "+ (Bronze/MarSubs)*100);
+            System.out.println("Silver: "+ (Silver/MarSubs)*100);
+            System.out.println("Silver: "+ (Gold/MarSubs)*100);
+            System.out.println("");
+        }
+        
+            
+            
+        
     }
+    
+    
 }

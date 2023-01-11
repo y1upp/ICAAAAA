@@ -85,7 +85,6 @@ public class SubSummaryCurrent {
             else if (month.equals("Sep")){
                 SepSubs++;
             }
-            
             else if (month.equals("Oct")){
                 OctSubs++;
             }
