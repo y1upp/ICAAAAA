@@ -13,6 +13,7 @@ public class Main {
             System.out.println("press 1 to enter a new subscription:" );
             System.out.println("press 2 to view a summary subscription of current:" );
             System.out.println("press 3 to view Summary of Subscriptions for a given month:" );
+            System.out.println("Press 4 to find a summary based on your last name:" );
             System.out.println("press 0 to exit:" );
             
             try { // trys code
@@ -25,9 +26,13 @@ public class Main {
                     SubSummaryCurrent SubSummaryCurrent = new SubSummaryCurrent(); // creating a new instance of the Sub Summary class
                     SubSummaryCurrent.PrintSummary(); //this code is executed
                 }
-                else if (Yes == 3){
-                    SubForSpecificMonth SubForSpecificMonth = new SubForSpecificMonth();
-                    SubForSpecificMonth.printMonthSummary();
+                else if (Yes == 3){ // if the user input is 3
+                    SubForSpecificMonth SubForSpecificMonth = new SubForSpecificMonth(); // creating new instance of the sub for specific  month class
+                    SubForSpecificMonth.printMonthSummary(); // executes code in this class
+                }
+                else if (Yes==4){ // if user input is 4
+                    FindAndDisplaySubSummary FindAndDisplaySubSummary = new FindAndDisplaySubSummary(); // creates new instance of the find and display summary class
+                    FindAndDisplaySubSummary.FindPrintSummary(); // executes the code in this class
                 }
                 else if (Yes==0){ //else if statment if the above code is not true and yes = 0
                     System.out.println("Exiting..."); //prompts the user the programme is exiting

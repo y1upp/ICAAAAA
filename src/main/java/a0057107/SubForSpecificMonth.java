@@ -22,8 +22,6 @@ public class SubForSpecificMonth {
         int Month;
         Month = Scanner.nextInt();
         
-        int MSubCounter = 0;
-        
         float JanSubs = 0; // counter for total subs this month 
         float FebSubs = 0; // counter for total subs this month 
         float MarSubs = 0; // counter for total subs this month 
@@ -656,7 +654,7 @@ public class SubForSpecificMonth {
         
         float BronzeSubDec = DecBSubCount/DecSubs;
         float SilverSubDec = DecSSubCount/DecSubs;
-        float GoldSubDec = FebBSubCount/DecSubs;
+        float GoldSubDec = DecGSubCount/DecSubs;
         
         if (Month == 1) { // if the user input = 1 then the following is displayed
             
@@ -673,7 +671,7 @@ public class SubForSpecificMonth {
        
         else if (Month ==2){
             System.out.println("Total number of subscriptions for February: "+FebSubs);
-            System.out.printf("Average monthly subscription fee: "+  "£%.2f "   , (BJtruetotal+SFtruetotal+GFtrueTotal)/100);
+            System.out.printf("Average monthly subscription fee: "+  "£%.2f "   , (BFtruetotal+SFtruetotal+GFtrueTotal)/100);
             System.out.println("");
             System.out.println("Percentage of subscriptions: ");
             System.out.println("");
@@ -695,7 +693,7 @@ public class SubForSpecificMonth {
         }
         else if (Month ==4){
             System.out.println("Total number of subscriptions for April: "+AprSubs);
-            System.out.printf("Average monthly subscription fee: "+  "£%.2f "   , (GMARCtrueTotal+SAtruetotal+GAtrueTotal)/100);
+            System.out.printf("Average monthly subscription fee: "+  "£%.2f "   , (BAtruetotal+SAtruetotal+GAtrueTotal)/100);
             System.out.println("");
             System.out.println("Percentage of subscriptions: ");
             System.out.println("");

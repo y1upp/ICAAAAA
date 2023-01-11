@@ -29,7 +29,7 @@ public class Display {
         
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         LocalDateTime now = LocalDateTime.now(); // getting the date
-        Name Name = new Name();
+        Name Name = new Name(); 
         SUBs SUBs= new SUBs();
         int SubscriptionCost = 0;
         float SubCodeDis = 0;
@@ -48,11 +48,11 @@ char UserPackage = 0;
         
         while (true) 
     {
-        System.out.println("Enter Package B,S or G: ");
+        System.out.println("Enter Package B,S or G: "); // the only correct input are these three options
         UserPackage = Scanner.nextLine().charAt(0);
-        if (UserPackage != 'B' && UserPackage != 'S' && UserPackage != 'G')
+        if (UserPackage != 'B' && UserPackage != 'S' && UserPackage != 'G') // if these options are not true then
         {
-            System.out.println("Invalid Input, please pick from the 3 options available");
+            System.out.println("Invalid Input, please pick from the 3 options available"); // prints a error message and asks for re try
         }
         else
         {
@@ -62,7 +62,7 @@ char UserPackage = 0;
       
     
 String fullName = null;
-if (UserPackage == 'B') {
+if (UserPackage == 'B') { // defining the names of our packages to print in the summary as per request of the specification
     fullName = "Bronze";
     System.out.println("you  entered the " + (fullName) + " Subscription");
 }
@@ -78,11 +78,11 @@ else if (UserPackage == 'G') {
 //*************************************** ENTER DURATION CODE  
       
 int DurIN;
-    while (true) {
+    while (true) { // the only options we want from the user are 1,3,6 and 12
     try {
         System.out.println("Enter duration 1,3, 6 or 12 ");
         DurIN = Scanner.nextInt();
-        if (DurIN != 1 && DurIN != 3 && DurIN != 6 && DurIN != 12)
+        if (DurIN != 1 && DurIN != 3 && DurIN != 6 && DurIN != 12) // if these options are not picked then it will ask for a re try
             { 
                 System.out.println("Invalid Input, please pick from the 4 options available.");
             }
@@ -92,7 +92,7 @@ int DurIN;
             }
     }
     catch (InputMismatchException i) {
-        System.out.println("invalid input. please enter, 1,3,6 or 12 ");
+        System.out.println("invalid input. please enter, 1,3,6 or 12 "); // catches a mismatch input and asks for a re try since the while loop remains true
         Scanner.nextLine();
     }
     }
@@ -100,7 +100,7 @@ int DurIN;
     String FullDuation = null;
     
     if (DurIN == 1) {
-        FullDuation = "One";
+        FullDuation = "One"; // defining the names of our duration to print in the summary as per request of the specification
         System.out.println("your duration will be " + (FullDuation) + " Month");
     }
     else if (DurIN == 3) {
@@ -123,10 +123,10 @@ String DiscountC = Scanner.nextLine();
 
 try {
         System.out.println("Enter your discount code or if you have no discount code, please press 0");
-        DiscountC = Scanner.nextLine();
+        DiscountC = Scanner.nextLine(); //the discount code = scanner  next line which is user input, if no code then enter 0
     }
     catch (InputMismatchException i) {
-        System.out.println("invalid input. please enter, 1,3,6 or 12");
+        System.out.println("invalid input. please enter, 1,3,6 or 12"); //input mismatch
         Scanner.nextLine();
     }
     
@@ -250,7 +250,7 @@ float FullTrueCost;
     System.out.println("|" + "\t\t\t\t\t\t" + "|");
     System.out.println("|" + " Customer: "  + YourNameIn +"\t\t\t " + "       "+ "|"); 
     System.out.println("|" + "\t\t\t\t\t\t" + "|");
-    System.out.print("|" + "     " + "Date:" + (dtf.format(now))); // getting the time
+    System.out.print("|" + "     " + "Date: " + (dtf.format(now))); // getting the time
     System.out.println("\t" + "Discount Code: " + DiscountC + "\t" + "|");
     System.out.print("|" + "  Package: " + fullName); 
     System.out.println("\t" + "     " + "Duration: " + FullDuation + "	" + "|");

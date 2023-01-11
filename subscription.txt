@@ -1,1 +1,1 @@
-Date: 2023/01/10   Duration: One   Package: Gold   Name: joshua   Discount Code: 0   Subcost: 9.54   Subcost: 9.54   Payment Term: 1   
+Date: 2023/01/11   Duration: Three   Package: Bronze   Name: joshua   Discount Code: 3   Subcost: 4.6   Subcost: 14.6   Payment Term: 1   
