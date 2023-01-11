@@ -246,11 +246,11 @@ float FullTrueCost;
     MonthlyTrueDiscount = SubscriptionCost - SubCodeDis;
     
             
-    System.out.println("+===============================================+");
+    System.out.println("+===============================================+"); // Summary of sub to the user with formatting such as \t and |
     System.out.println("|" + "\t\t\t\t\t\t" + "|");
     System.out.println("|" + " Customer: "  + YourNameIn +"\t\t\t " + "       "+ "|"); 
     System.out.println("|" + "\t\t\t\t\t\t" + "|");
-    System.out.print("|" + "     " + "Date:" + (dtf.format(now)));
+    System.out.print("|" + "     " + "Date:" + (dtf.format(now))); // getting the time
     System.out.println("\t" + "Discount Code: " + DiscountC + "\t" + "|");
     System.out.print("|" + "  Package: " + fullName); 
     System.out.println("\t" + "     " + "Duration: " + FullDuation + "	" + "|");

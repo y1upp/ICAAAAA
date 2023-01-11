@@ -17,15 +17,15 @@ public class Main {
             
             try { // trys code
                 int Yes = Scanner.nextInt(); //defining an int variable as yes
-                if (Yes==1){ //if user input = 1 
+                if (Yes == 1){ //if user input = 1 
                     Display Display = new Display(); //creating a new instance of the display class
                     Display.display(); //this code is executed
                 }
-                else if (Yes==2){ //else if statment if the above is not true and yes =2
+                else if (Yes == 2){ //else if statment if the above is not true and yes =2
                     SubSummaryCurrent SubSummaryCurrent = new SubSummaryCurrent(); // creating a new instance of the Sub Summary class
                     SubSummaryCurrent.PrintSummary(); //this code is executed
                 }
-                else if (Yes ==3){
+                else if (Yes == 3){
                     SubForSpecificMonth SubForSpecificMonth = new SubForSpecificMonth();
                     SubForSpecificMonth.printMonthSummary();
                 }
