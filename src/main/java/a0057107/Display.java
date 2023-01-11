@@ -277,7 +277,7 @@ float FullTrueCost;
     
 //***************************************  saving the summary output to a text based file named subscription.txt
 
-
+         System.out.println("Printing to a text file called Summary");
         try {
             FileWriter writer = new FileWriter("subscription.txt");
             writer.write("Date: " + (dtf.format(now)) + "   " + "Duration: " + FullDuation + "   " + "Package: " + fullName + "   " + "Name: " + YourNameIn + "   " + "Discount Code: " + DiscountC + "   " + "Subcost: " + MonthlyTrueDiscount/100 + 
