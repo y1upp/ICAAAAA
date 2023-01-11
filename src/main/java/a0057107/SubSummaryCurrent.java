@@ -44,24 +44,24 @@ public class SubSummaryCurrent {
         int NovSubs = 0; // counter
         int DecSubs = 0; // counter
         
-        File current = new File("current.txt");
-        Scanner ScanFile = new Scanner(current);
+        File current = new File("current.txt"); // creating new file which is our file we want to read
+        Scanner ScanFile = new Scanner(current); // we want to scan this file to read it
         int MonthlyCost = 0;
         
-        while (ScanFile.hasNextLine()) {
-            String line = ScanFile.next();
-            TotalSubs++;
-            String month = line.substring(3, 6);
-            String Package = ScanFile.next();
-            ScanFile.next();
-            ScanFile.next();
-            String Monthly = ScanFile.next();
-
+        while (ScanFile.hasNextLine()) { // where this file has a next line, the code below will be executed
+            String line = ScanFile.next(); // line is go to file next piece of data
+            TotalSubs++; // the total subs is incremented for everysingle line there is
+            String month = line.substring(3, 6); // substring to find the month of each sub, located the month between the characters 3 and 6. substring cant be used for other attributes because the lines do not have equal characters
+            String Package = ScanFile.next(); // the package is the files next piece of data
+            ScanFile.next(); // skipping the next piece of data in this file
+            ScanFile.next(); // skipping the next piece of data in this file
+            String Monthly = ScanFile.next(); // the monthly string is the text files piece of data after the the skipping steps
+// here we were using scanner to basically search and spilt up each line and each string in the current text file
             
-            if (month.equals("Jan")){
+            if (month.equals("Jan")){ // if the month equals, this piece of text ("Jan") in the sub string in the text file then it increments our JanSubs variable.
                 JanSubs++;
             }
-            else if (month.equals("Feb")){
+            else if (month.equals("Feb")){ // the same pattern as above, searches and increments 
                 FebSubs++;
             }
             else if (month.equals("Mar")){
@@ -96,7 +96,7 @@ public class SubSummaryCurrent {
             }
             else{}
             
-            if (Package.equals("B")){
+            if (Package.equals("B")){ // searching for the B in each line and incrementing our Bronze variable, the same pattern is followed in the code below for silver and bronze
                 Bronze++;
             }
             else if (Package.equals("S")){
@@ -106,19 +106,20 @@ public class SubSummaryCurrent {
                 Gold++;
             }
             
-            if (Monthly.equals("M")){
+            if (Monthly.equals("M")){ // because we only want to find the average monthly subs, here we're searching the the M in the text file, and we count this as MSubCounter and incrementing. 
                 MSubCounter++;
-                MonthlyCost = MonthlyCost + ScanFile.nextInt();
+                MonthlyCost = MonthlyCost + ScanFile.nextInt(); // here, we are loacating the M and saying the next piece of data, is the data we want to keep and add. if it was only MonthlyCost = ScanFile.nextInt(); the variable MonthlyCost would have just  been overwritten, so i  did monthly cost = monthly cost ScanFile.nextInt();  
             }
                
            ScanFile.nextLine();
            
         }
           
-        float truetotal = MonthlyCost/MSubCounter;
+        float truetotal = MonthlyCost/MSubCounter; // saved as a float to format later, true total is the total the total of monthly cost subs divided by the total of monthly subs there are. 
         
-        ScanFile.close();
-        int AverageMonthlySubCounter = (JanSubs + FebSubs + MarSubs + AprSubs + MaySubs + JunSubs + JulSubs + AugSubs + SepSubs + OctSubs + NovSubs + DecSubs)/12;
+        ScanFile.close(); // closing the file scanner
+        
+        int AverageMonthlySubCounter = (JanSubs + FebSubs + MarSubs + AprSubs + MaySubs + JunSubs + JulSubs + AugSubs + SepSubs + OctSubs + NovSubs + DecSubs)/12; // the following are the print statements to the user 
         System.out.println("Total number of subscriptions: "+TotalSubs);
         System.out.println("Average monthly subscriptions: "+AverageMonthlySubCounter);
         System.out.printf("Average monthly subscription fee: "+  "£%.2f "   , (truetotal)/100);

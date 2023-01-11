@@ -139,6 +139,7 @@ int dis = DiscountC.charAt(DiscountC.length() - 1) - '0' ; // ASCII table | code
     
 System.out.println("Enter Terms (press 1 for pay in full or press 2 for monthly subscription): ");
 
+// Below code is asking the user for the terms of their payment
 
     int TermIN;
     while (true) {
@@ -154,7 +155,7 @@ System.out.println("Enter Terms (press 1 for pay in full or press 2 for monthly 
                 System.out.println("You are going to pay your subscription monthly");
             break;
             }
-        else if (TermIN != 1 && TermIN != 2)
+        else if (TermIN != 1 && TermIN != 2) // we only want the user to enter 1 or 2, this code will catch the input mismatch and will ask to try again
         {
             System.out.println("please enter either 1 to pay full price or press 2 to pay monthly");
         }
@@ -172,9 +173,9 @@ System.out.println("Enter Terms (press 1 for pay in full or press 2 for monthly 
         
 //***************************************  Setting the subscription cost for a bronze package
     
-    if (DurIN == 1 && UserPackage == 'B')
+    if (DurIN == 1 && UserPackage == 'B') // if these condtions are true
     {
-        SubscriptionCost = 600;
+        SubscriptionCost = 600; // the sub cost will be this much, this same pattern continues down the code to find sub cost for the user
     }
     else if (DurIN == 3 && UserPackage == 'B')
     {
@@ -229,21 +230,21 @@ System.out.println("Enter Terms (press 1 for pay in full or press 2 for monthly 
 
 //***************************************  calculating the discount from code and from a one off payment
 
-float fullPaymentDis = 5;
+float fullPaymentDis = 5; // 5% discount if the term = 1
 float MonthlyTrueDiscount;
 float FullTrueCost;
     
     if (TermIN == 1)
     {
-        SubCodeDis = ((SubscriptionCost /100) * (dis + fullPaymentDis));
+        SubCodeDis = ((SubscriptionCost /100) * (dis + fullPaymentDis)); // calculating  discount if they user entered  a full payment at once option
     }
-    else if (TermIN == 2)
+    else if (TermIN == 2) 
     {
-        SubCodeDis = ((SubscriptionCost /100) * (dis));
+        SubCodeDis = ((SubscriptionCost /100) * (dis)); // dis is the discount from the users input if they have a discount code or not
     }
     
-    FullTrueCost = ((SubscriptionCost * DurIN) - (SubCodeDis));
-    MonthlyTrueDiscount = SubscriptionCost - SubCodeDis;
+    FullTrueCost = ((SubscriptionCost * DurIN) - (SubCodeDis)); // full cost calculation 
+    MonthlyTrueDiscount = SubscriptionCost - SubCodeDis; 
     
             
     System.out.println("+===============================================+"); // Summary of sub to the user with formatting such as \t and |
@@ -264,11 +265,11 @@ float FullTrueCost;
     System.out.println("|" + "\t\t\t\t\t\t" + "|");
     if (TermIN == 1)
     {
-        System.out.printf("|" + "          " + "One-off subscription: " + "£%.2f "   + " \t" + "|" , FullTrueCost/100);
+        System.out.printf("|" + "          " + "One-off subscription: " + "£%.2f "   + " \t" + "|" , FullTrueCost/100); // if the payment is a one off subscription then this code is executed with extra discount
     }
     else if (TermIN == 2)
     {
-        System.out.printf("|" + "          " + "Monthly subscription: " + "£%.2f "   + " \t" + "|" , MonthlyTrueDiscount/100);    
+        System.out.printf("|" + "          " + "Monthly subscription: " + "£%.2f "   + " \t" + "|" , MonthlyTrueDiscount/100); // if the payment is monthly, this will be displayed to the user
     }
     
     System.out.println("\n" + "|" + "\t\t\t\t\t\t" + "|");

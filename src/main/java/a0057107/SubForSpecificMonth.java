@@ -23,22 +23,22 @@ public class SubForSpecificMonth {
         Month = Scanner.nextInt();
         
         float JanSubs = 0; // counter for total subs this month 
-        float FebSubs = 0; // counter for total subs this month 
-        float MarSubs = 0; // counter for total subs this month 
-        float AprSubs = 0; // counter for total subs this month 
-        float MaySubs = 0; // counter for total subs this month 
-        float JunSubs = 0; // counter for total subs this month 
-        float JulSubs = 0; // counter for total subs this month 
-        float AugSubs = 0; // counter for total subs this month 
-        float SepSubs = 0; // counter for total subs this month 
-        float OctSubs = 0; // counter for total subs this month 
-        float NovSubs = 0; // counter for total subs this month 
-        float DecSubs = 0; // counter for total subs this month 
+        float FebSubs = 0; 
+        float MarSubs = 0; 
+        float AprSubs = 0; 
+        float MaySubs = 0; 
+        float JunSubs = 0; 
+        float JulSubs = 0; 
+        float AugSubs = 0; 
+        float SepSubs = 0;
+        float OctSubs = 0; 
+        float NovSubs = 0; 
+        float DecSubs = 0;  
         
-        float JanBsubCount = 0; 
-        float JanSsubCount = 0;
-        float JanGsubCount = 0;
-        float FebBSubCount = 0; 
+        float JanBsubCount = 0; // counter for total Bronze subs in january
+        float JanSsubCount = 0; // counter for total silver subs in january
+        float JanGsubCount = 0; // counter for total gold subs in january  
+        float FebBSubCount = 0; // the same pattern as above
         float FebSSubCount = 0;
         float FebGSubCount = 0;
         float MarBSubCount = 0;
@@ -73,54 +73,54 @@ public class SubForSpecificMonth {
         float DecGSubCount = 0;
         
         float JansubCounter = 0; //counter for subs that are monthly in this month
-        float FebSubCounter = 0; //counter for subs that are monthly in this month
-        float MarSubCounter = 0; //counter for subs that are monthly in this month
-        float AprSubCounter = 0; //counter for subs that are monthly in this month
-        float MaySubCounter = 0; //counter for subs that are monthly in this month
-        float JunSubCounter = 0; //counter for subs that are monthly in this month
-        float JulSubCounter = 0; //counter for subs that are monthly in this month
-        float AugSubCounter = 0; //counter for subs that are monthly in this month
-        float SepSubCounter = 0; //counter for subs that are monthly in this month
-        float OctSubCounter = 0; //counter for subs that are monthly in this month
-        float NovSubCounter = 0; //counter for subs that are monthly in this month
-        float DecSubCounter = 0; //counter for subs that are monthly in this month
+        float FebSubCounter = 0; 
+        float MarSubCounter = 0; 
+        float AprSubCounter = 0; 
+        float MaySubCounter = 0; 
+        float JunSubCounter = 0;
+        float JulSubCounter = 0; 
+        float AugSubCounter = 0; 
+        float SepSubCounter = 0; 
+        float OctSubCounter = 0; 
+        float NovSubCounter = 0; 
+        float DecSubCounter = 0; 
          
         int JanBMonthlyCost = 0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B" 
         int JanSMonthlyCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
         int JanGMonthlyCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int FebBSubCost = 0;// the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B" 
-        int FebSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int FebGSubCost= 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int MarBSubCost =0;// the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B" 
-        int MarSSubCost = 0;// the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int MarGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int AprSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int AprSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int AprGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int MaySubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int MaySSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
+        int FebBSubCost = 0; // same pattern as above
+        int FebSSubCost = 0; 
+        int FebGSubCost= 0; 
+        int MarBSubCost =0;
+        int MarSSubCost = 0;
+        int MarGSubCost = 0; 
+        int AprSubCost =0; 
+        int AprSSubCost = 0;  
+        int AprGSubCost = 0; 
+        int MaySubCost =0; 
+        int MaySSubCost = 0; 
         int MayGSubCost = 0;
-        int JunSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int JunSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int JunGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int JulSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int JulSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int JulGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int AugSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int AugSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int AugGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int SepSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int SepSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int SepGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int OctSubCost=0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int OctSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int OctGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int NovSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int NovSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int NovGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
-        int DecSubCost =0; // the cost when the month equals its respective "" and when it equals "B" and when it is a monthly sub "B"
-        int DecSSubCost = 0; // the cost when the month equals its respective "" and when it equals "S" and when it is a monthly sub "B" 
-        int DecGSubCost = 0; // the cost when the month equals its respective "" and when it equals "G" and when it is a monthly sub "B" 
+        int JunSubCost =0; 
+        int JunSSubCost = 0; 
+        int JunGSubCost = 0; 
+        int JulSubCost =0; 
+        int JulSSubCost = 0; 
+        int JulGSubCost = 0; 
+        int AugSubCost =0; 
+        int AugSSubCost = 0; 
+        int AugGSubCost = 0; 
+        int SepSubCost =0; 
+        int SepSSubCost = 0; 
+        int SepGSubCost = 0; 
+        int OctSubCost=0; 
+        int OctSSubCost = 0; 
+        int OctGSubCost = 0; 
+        int NovSubCost =0; 
+        int NovSSubCost = 0;
+        int NovGSubCost = 0; 
+        int DecSubCost =0; 
+        int DecSSubCost = 0; 
+        int DecGSubCost = 0; 
         
         File current = new File("current.txt"); // Creating the file in this class
         Scanner ScanFile = new Scanner(current); // Reading and scanning this file
@@ -137,17 +137,17 @@ public class SubForSpecificMonth {
             // Below code increments variables above based on positions of data in the current text file
             // One section of code is noted as the following code follows the same pattern
             
-            
+            //JANUARY
             if (month.equals("Jan")){ // when the month which is our substring = this we increment the subs related to this variable
                     JanSubs++;} // incrementing this variable base on if the above substring matches
             if (month.equals("Jan")&&(Monthly.equals("M"))){ // inner if statment if the substring is matched and the M is matched in the text file, we increment the associated variable
                 JansubCounter++; // incrementing the variable based on the code above if the two matches are made
             }
-            if (month.equals("Jan")&&Package.equals("B")) 
+            if (month.equals("Jan")&&Package.equals("B")) // if jan and if B increment JanBsubCount
             {
-            JanBsubCount++;
+            JanBsubCount++; //Increment
             }
-            else if (month.equals("Jan")&&Package.equals("S")) 
+            else if (month.equals("Jan")&&Package.equals("S")) // same pattern as above
             {
             JanSsubCount++;
             }
@@ -156,237 +156,250 @@ public class SubForSpecificMonth {
             JanGsubCount++;
             }
             
-            
-            
-            else if (month.equals("Feb")){ 
-                    FebSubs++;}
-            if (month.equals("Feb")&&(Monthly.equals("M"))){
-                FebSubCounter++; }
+            //FEBRUARY
+            else if (month.equals("Feb")){ // same pattern as above
+                FebSubs++;}
+            if (month.equals("Feb")&&(Monthly.equals("M")))
+            {
+                FebSubCounter++; 
+            }
             if (month.equals("Feb")&&Package.equals("B")) 
             {
-            FebBSubCount++;
+                FebBSubCount++;
             }
             else if (month.equals("Feb")&&Package.equals("S")) 
             {
-            FebSSubCount++;
+                FebSSubCount++;
             }
             else if (month.equals("Feb")&&Package.equals("G")) 
             {
-            FebGSubCount++;
+                FebGSubCount++;
             }
             
-            
+            //MARCH
             else  if (month.equals("Mar")){ 
-                    MarSubs++;} 
-            if (month.equals("Mar")&&(Monthly.equals("M"))){ 
-                    MarSubCounter++; } 
-            if (month.equals("Feb")&&Package.equals("B")) 
+                MarSubs++;} 
+            if (month.equals("Mar")&&(Monthly.equals("M")))
             {
-            MarBSubCount++;
+                MarSubCounter++; 
+            } 
+            if (month.equals("Mar")&&Package.equals("B")) 
+            {
+                MarBSubCount++;
             }
-            else if (month.equals("Feb")&&Package.equals("S")) 
+            else if (month.equals("Mar")&&Package.equals("S")) 
             {
-            MarSSubCount++;
+                MarSSubCount++;
             }
-            else if (month.equals("Feb")&&Package.equals("G")) 
+            else if (month.equals("Mar")&&Package.equals("G")) 
             {
-            MarGSubCount++;
+                MarGSubCount++;
             }
             
-            
-            
-            else  if (month.equals("Apr")){ 
-                    AprSubs++;}
-            
-            if (month.equals("Apr")&&(Monthly.equals("M"))){ 
-                AprSubCounter++; } 
-                if (month.equals("Apr")&&Package.equals("B")) 
+            //APRIL
+            else  if (month.equals("Apr"))
             {
-            AprBSubCount++;
+                AprSubs++;
+            }
+            if (month.equals("Apr")&&(Monthly.equals("M")))
+            {
+                AprSubCounter++;
+            } 
+            if (month.equals("Apr")&&Package.equals("B"))
+            {
+                AprBSubCount++;
             }
             else if (month.equals("Apr")&&Package.equals("S")) 
             {
-            AprSSubCount++;
+                AprSSubCount++;
             }
             else if (month.equals("Apr")&&Package.equals("G")) 
             {
-            AprGSubCount++;
+                AprGSubCount++;
             }
                 
-            
-            
-            
-            
-            
-            
-            else if (month.equals("May")){ 
-                    MaySubs++;} 
-                if (month.equals("May")&&(Monthly.equals("M"))){ 
-                MaySubCounter++; } 
-                if (month.equals("May")&&Package.equals("B")) 
+            //MAY
+            else if (month.equals("May"))
+            { 
+                MaySubs++;
+            } 
+            if (month.equals("May")&&(Monthly.equals("M")))
             {
-            MayBSubCount++;
+                MaySubCounter++; 
+            } 
+            if (month.equals("May")&&Package.equals("B")) 
+            {
+                MayBSubCount++;
             }
             else if (month.equals("May")&&Package.equals("S")) 
             {
-            MaySSubCount++;
+                MaySSubCount++;
             }
             else if (month.equals("May")&&Package.equals("G")) 
             {
-            MayGSubCount++;
+                MayGSubCount++;
             }
-                
-                
-                
-                else  if (month.equals("Jun")){ 
-                    JunSubs++;} 
-                if (month.equals("Jun")&&(Monthly.equals("M"))){ 
-                JunSubCounter++; } 
-                
-                if (month.equals("Jun")&&Package.equals("B")) 
+            
+            //JUNE
+            else  if (month.equals("Jun"))
+            { 
+                JunSubs++;
+            }
+            if (month.equals("Jun")&&(Monthly.equals("M")))
             {
-            JunBSubCount++;
+                JunSubCounter++; 
+            }
+            if (month.equals("Jun")&&Package.equals("B")) 
+            {
+                JunBSubCount++;
             }
             else if (month.equals("Jun")&&Package.equals("S")) 
             {
-            JunSSubCount++;
+                JunSSubCount++;
             }
             else if (month.equals("Jun")&&Package.equals("G")) 
             {
-            JunGSubCount++;
+                JunGSubCount++;
             }
-                
-                
-                
-                
-                else   if (month.equals("Jul")){ 
-                    JulSubs++;} 
-                if (month.equals("Jul")&&(Monthly.equals("M"))){ 
-                JulSubCounter++; }
+            
+            //JULY
+            else   if (month.equals("Jul"))
+            {
+                JulSubs++;
+            }
+            if (month.equals("Jul")&&(Monthly.equals("M")))
+            { 
+                JulSubCounter++; 
+            }
                 if (month.equals("Jul")&&Package.equals("B")) 
             {
-            JulBSubCount++;
+                JulBSubCount++;
             }
-            else if (month.equals("Jul")&&Package.equals("S")) 
+                else if (month.equals("Jul")&&Package.equals("S")) 
             {
-            JulSSubCount++;
+                JulSSubCount++;
             }
-            else if (month.equals("Jul")&&Package.equals("G")) 
+                else if (month.equals("Jul")&&Package.equals("G")) 
             {
-            JulGSubCount++;
+                JulGSubCount++;
             }
-                
-                
-                
-                
-                
-                else   if (month.equals("Aug")){ 
-                    AugSubs++;} 
-                if (month.equals("Aug")&&(Monthly.equals("M"))){ 
-                AugSubCounter++; } 
+            
+                //AUGUST
+                else if (month.equals("Aug"))
+            { 
+                AugSubs++;
+            }
+                if (month.equals("Aug")&&(Monthly.equals("M")))
+                {
+                    AugSubCounter++; 
+                }
                 if (month.equals("Aug")&&Package.equals("B")) 
             {
-            AugBSubCount++;
+                AugBSubCount++;
             }
-            else if (month.equals("Aug")&&Package.equals("S")) 
+                else if (month.equals("Aug")&&Package.equals("S")) 
             {
-            AugSSubCount++;
+                AugSSubCount++;
             }
-            else if (month.equals("Aug")&&Package.equals("G")) 
+                else if (month.equals("Aug")&&Package.equals("G")) 
             {
-            AugGSubCount++;
+                AugGSubCount++;
             }
                 
-                
-                
-                
-                
-                else   if (month.equals("Sep")){ 
-                    SepSubs++;} 
-                if (month.equals("Sep")&&(Monthly.equals("M"))){ 
-                SepSubCounter++; } 
+                //SEPTEMBER
+                else if (month.equals("Sep"))
+                {
+                    SepSubs++;
+                }
+                if (month.equals("Sep")&&(Monthly.equals("M")))
+                {
+                    SepSubCounter++; 
+                }
                 if (month.equals("Sep")&&Package.equals("B")) 
-            {
-            SepBSubCount++;
-            }
-            else if (month.equals("Sep")&&Package.equals("S")) 
-            {
-            SepSSubCount++;
-            }
-            else if (month.equals("Sep")&&Package.equals("G")) 
-            {
-            SepGSubCount++;
-            }
+                {
+                    SepBSubCount++;
+                }
+                else if (month.equals("Sep")&&Package.equals("S"))
+                {
+                    SepSSubCount++;
+                }
+                else if (month.equals("Sep")&&Package.equals("G"))
+                {
+                    SepGSubCount++;
+                }
                 
+                //OCTOBER
+                else if (month.equals("Oct"))
+                {
+                    OctSubs++;
+                }
+                if (month.equals("Oct")&&(Monthly.equals("M")))
+                {
+                    OctSubCounter++; 
+                }
+                if (month.equals("Oct")&&Package.equals("B"))
+                {
+                    OctBSubCount++;
+                }
+                else if (month.equals("Oct")&&Package.equals("S"))
+                {
+                    OctSSubCount++;
+                }
+                else if (month.equals("Oct")&&Package.equals("G"))
+                {
+                    OctGSubCount++;
+                }
                 
+                //NOVEMBER
+                else if (month.equals("Nov"))
+                {
+                    NovSubs++;
+                }
+                if (month.equals("Nov")&&(Monthly.equals("M")))
+                {
+                    NovSubCounter++; 
+                }
+                if (month.equals("Nov")&&Package.equals("B"))
+                {
+                    NovBSubCount++;
+                }
+                else if (month.equals("Nov")&&Package.equals("S"))
+                {
+                    NovSSubCount++;
+                }
+                else if (month.equals("Nov")&&Package.equals("G"))
+                {
+                    NovGSubCount++;
+                }
                 
-                
-                
-                else   if (month.equals("Oct")){ 
-                    OctSubs++;} 
-                if (month.equals("Oct")&&(Monthly.equals("M"))){ 
-                OctSubCounter++; } 
-                
-                if (month.equals("Oct")&&Package.equals("B")) 
-            {
-            OctBSubCount++;
-            }
-            else if (month.equals("Oct")&&Package.equals("S")) 
-            {
-            OctSSubCount++;
-            }
-            else if (month.equals("Oct")&&Package.equals("G")) 
-            {
-            OctGSubCount++;
-            }
-                
-                
-                
-                
-                else if (month.equals("Nov")){ 
-                    NovSubs++;} 
-                if (month.equals("Nov")&&(Monthly.equals("M"))){ 
-                NovSubCounter++; } 
-                if (month.equals("Nov")&&Package.equals("B")) 
-            {
-            NovBSubCount++;
-            }
-            else if (month.equals("Nov")&&Package.equals("S")) 
-            {
-            NovSSubCount++;
-            }
-            else if (month.equals("Nov")&&Package.equals("G")) 
-            {
-            NovGSubCount++;
-            }
-                
-                
-                
-                
-                else  if (month.equals("Dec")){ 
-                    DecSubs++;} 
-                if (month.equals("Dec")&&(Monthly.equals("M"))){ 
-                DecSubCounter++; } 
-            
-                if (month.equals("Dec")&&Package.equals("B")) 
-            {
-            DecBSubCount++;
-            }
-            else if (month.equals("Dec")&&Package.equals("S")) 
-            {
-            DecSSubCount++;
-            }
-            else if (month.equals("Dec")&&Package.equals("G")) 
-            {
-            DecGSubCount++;
-            }
+                //DECEMBER
+                else if (month.equals("Dec"))
+                {
+                    DecSubs++;
+                }
+                if (month.equals("Dec")&&(Monthly.equals("M")))
+                {
+                    DecSubCounter++; 
+                }
+                if (month.equals("Dec")&&Package.equals("B"))
+                {
+                    DecBSubCount++;
+                }
+                else if (month.equals("Dec")&&Package.equals("S"))
+                {
+                    DecSSubCount++;
+                }
+                else if (month.equals("Dec")&&Package.equals("G"))
+                {
+                    DecGSubCount++;
+                }
                 
                
                 
                 
                 // below code gets the cost of a month for each bronze, silver and gold and adds it to a variabe. it also looks at if the payment is one off or monthly
            
-                
+                // JANUARY
                 if (month.equals("Jan")&&Package.equals("B")&&Monthly.equals("M") ) // if all of these are matched 
                 {
                 JanBMonthlyCost = JanBMonthlyCost + ScanFile.nextInt(); // the variable created above is changed and the next int is the next set of data at this point in the scanner.next
@@ -400,7 +413,7 @@ public class SubForSpecificMonth {
                     JanGMonthlyCost = JanGMonthlyCost + ScanFile.nextInt();
                 }
                 
-                
+                //FEBRUARY
                 if (month.equals("Feb")&&Package.equals("B")&&Monthly.equals("M") ) // code follows the same pattern as above
                 {
                     FebBSubCost = FebBSubCost + ScanFile.nextInt();
@@ -414,7 +427,7 @@ public class SubForSpecificMonth {
                     FebGSubCost = FebGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //MARCH
                 if (month.equals("Mar")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     MarBSubCost = MarBSubCost + ScanFile.nextInt();
@@ -428,7 +441,7 @@ public class SubForSpecificMonth {
                     MarGSubCost = MarGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //APRIL
                 if (month.equals("Apr")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     AprSubCost = AprSubCost + ScanFile.nextInt();
@@ -442,7 +455,7 @@ public class SubForSpecificMonth {
                     AprGSubCost = AprGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //MAY
                 if (month.equals("May")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     MaySubCost = MaySubCost + ScanFile.nextInt();
@@ -456,7 +469,7 @@ public class SubForSpecificMonth {
                     MayGSubCost = MayGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //JUNE
                 if (month.equals("Jun")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     JunSubCost = JunSubCost + ScanFile.nextInt();
@@ -470,7 +483,7 @@ public class SubForSpecificMonth {
                     JunGSubCost = JunGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //JUNE
                 if (month.equals("Jul")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     JulSubCost = JulSubCost + ScanFile.nextInt();
@@ -484,7 +497,7 @@ public class SubForSpecificMonth {
                     JulGSubCost = JulGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //AUGUST
                 if (month.equals("Aug")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     AugSubCost = AugSubCost + ScanFile.nextInt();
@@ -498,7 +511,7 @@ public class SubForSpecificMonth {
                     AugGSubCost = AugGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //SEPTEMBER
                 if (month.equals("Sep")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     SepSubCost = SepSubCost + ScanFile.nextInt();
@@ -511,7 +524,7 @@ public class SubForSpecificMonth {
                     SepGSubCost = SepGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //OCTOBER
                 if (month.equals("Oct")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     OctSubCost = OctSubCost + ScanFile.nextInt();
@@ -524,7 +537,7 @@ public class SubForSpecificMonth {
                     OctGSubCost = OctGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //NOVEMBER
                 if (month.equals("Nov")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     NovSubCost = NovSubCost + ScanFile.nextInt();
@@ -537,7 +550,7 @@ public class SubForSpecificMonth {
                     NovGSubCost = NovGSubCost + ScanFile.nextInt();
                 }
                 
-                
+                //DECEMBER
                 if (month.equals("Dec")&&Package.equals("B")&&Monthly.equals("M") )
                 {
                     DecSubCost = DecSubCost + ScanFile.nextInt();
@@ -606,7 +619,6 @@ public class SubForSpecificMonth {
         float GDECtrueTotal = DecGSubCost/DecSubCounter;
        
         // floats to help calculate percentages for each month
-        
         
         float BronzSubJanuary = JanBsubCount/JanSubs;
         float SilverSubJanuary = JanSsubCount/JanSubs;

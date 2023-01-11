@@ -18,10 +18,10 @@ import java.time.format.DateTimeFormatter;
  */
 public class FindAndDisplaySubSummary {
     
-    void FindPrintSummary() throws FileNotFoundException{
+    void FindPrintSummary() throws FileNotFoundException{ // throwing  the file not found exception
         
         
-        System.out.println("Please enter your names or characters: ");
+        System.out.println("Please enter your names or characters: "); // asks user to input their way to find their summary sub
         
         Scanner Scanner = new Scanner(System.in);
         String InputInitial = Scanner.nextLine();
@@ -34,12 +34,9 @@ public class FindAndDisplaySubSummary {
         
         int MonthlyCost = 0;
         
-        
-        
-        
         while (ScanFile.hasNextLine()) {
             
-            String line = ScanFile.next();
+            String line = ScanFile.next();  // below code is supposed to sort through the text file and  spilt up the data into strings and ints
             String month = line.substring(3, 6);
             String Package = ScanFile.next();
             String Duration = ScanFile.next();
